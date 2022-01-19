@@ -29,7 +29,7 @@ public class cal_salary{
             System.out.println("Net Pay: " + String.format("%.2f", Net_Pay));
         }
         else if(cal_salary >= 400000 && cal_salary < 800000){
-            float tax_excess = cal_salary - 400000;
+            float tax_excess = (cal_salary - 30000) - 400000;
             Double tax_deduction = 0.25 * tax_excess + 30000;
 
             //variables to compute values
@@ -48,7 +48,7 @@ public class cal_salary{
             System.out.println("Net Pay: " + String.format("%.2f", Net_Pay));
         }
         else if(cal_salary >= 800000 && cal_salary < 2000000){
-            float tax_excess = cal_salary - 800000;
+            float tax_excess = (cal_salary - 130000) - 800000;
             Double tax_deduction = 0.25 * tax_excess + 130000;
 
             //variables to compute values
@@ -67,7 +67,7 @@ public class cal_salary{
             System.out.println("Net Pay: " + String.format("%.2f", Net_Pay));
         }
         else if(cal_salary >= 2000000 && cal_salary < 8000000){
-            float tax_excess = cal_salary - 2000000;
+            float tax_excess = (cal_salary - 490000) - 2000000;
             Double tax_deduction = 0.25 * tax_excess + 490000;
 
             //variables to compute values
@@ -86,7 +86,7 @@ public class cal_salary{
             System.out.println("Net Pay: " + String.format("%.2f", Net_Pay));
         }
         else if(cal_salary >= 8000000){
-            float tax_excess = cal_salary - 8000000;
+            float tax_excess = (cal_salary - 2410000) - 8000000;
             Double tax_deduction = 0.25 * tax_excess + 2410000;
 
             //variables to compute values
